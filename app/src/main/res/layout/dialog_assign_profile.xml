@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/bg_dialog">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Assign Profile"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/text_strong"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/emptyProfilesText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No profiles found. Please create one first."
+        android:visibility="gone"
+        android:textColor="@color/danger"
+        android:layout_marginBottom="16dp"/>
+
+    <Spinner
+        android:id="@+id/profileSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_spinner"
+        android:layout_marginBottom="24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cancelBtn"
+            style="@style/Widget.Tag.Button.DangerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="@color/text_secondary"
+            android:layout_marginEnd="8dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/assignBtn"
+            style="@style/Widget.Tag.Button.Primary"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Assign"/>
+    </LinearLayout>
+</LinearLayout>

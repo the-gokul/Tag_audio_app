@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.Tag.Card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/itemTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_strong"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/itemMeta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/shareBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_share"
+                android:contentDescription="@string/share" />
+
+            <CheckBox
+                android:id="@+id/selectCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/itemStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/text_primary"
+            android:textSize="13sp" />
+
+        <!-- Live upload progress (percent, speed, time left); only while uploading -->
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/uploadProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:max="100"
+            android:visibility="gone"
+            app:trackCornerRadius="2dp" />
+
+        <TextView
+            android:id="@+id/uploadProgressText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/text_primary"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <!-- Icon above label so text never wraps mid-word on narrow phones -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/dataBtn"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minWidth="0dp"
+                android:minHeight="52dp"
+                android:insetLeft="0dp"
+                android:insetRight="0dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="@string/data"
+                android:textAllCaps="true"
+                android:textColor="@color/primary"
+                android:textSize="11sp"
+                app:icon="@drawable/ic_menu"
+                app:iconTint="@color/primary"
+                app:iconGravity="top"
+                app:iconPadding="2dp"
+                app:iconSize="20dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/videoBtn"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minWidth="0dp"
+                android:minHeight="52dp"
+                android:insetLeft="0dp"
+                android:insetRight="0dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="@string/video"
+                android:textAllCaps="true"
+                android:textColor="@color/primary"
+                android:textSize="11sp"
+                app:icon="@android:drawable/ic_media_play"
+                app:iconTint="@color/primary"
+                app:iconGravity="top"
+                app:iconPadding="2dp"
+                app:iconSize="20dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/infoBtn"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minWidth="0dp"
+                android:minHeight="52dp"
+                android:insetLeft="0dp"
+                android:insetRight="0dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="@string/info"
+                android:textAllCaps="true"
+                android:textColor="@color/primary"
+                android:textSize="11sp"
+                app:icon="@android:drawable/ic_dialog_info"
+                app:iconTint="@color/primary"
+                app:iconGravity="top"
+                app:iconPadding="2dp"
+                app:iconSize="20dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/syncBtn"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minWidth="0dp"
+                android:minHeight="52dp"
+                android:insetLeft="0dp"
+                android:insetRight="0dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="@string/sync"
+                android:textAllCaps="false"
+                android:textColor="@color/primary"
+                android:textSize="11sp"
+                app:icon="@android:drawable/ic_popup_sync"
+                app:iconTint="@color/primary"
+                app:iconGravity="top"
+                app:iconPadding="2dp"
+                app:iconSize="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

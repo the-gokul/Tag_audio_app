@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Palette #57 (extracted): #16697A #489FB5 #82C0CC #EDE7E3 #FFA62B -->
+    <color name="primary">#16697A</color>
+    <color name="primary_dark">#0F4C58</color>
+    <color name="primary_deep">#0A3840</color>
+    <color name="primary_mid">#489FB5</color>
+    <color name="primary_light">#82C0CC</color>
+    <color name="primary_pale">#D6EEF2</color>
+
+    <color name="nordic_teal">@color/primary</color>
+    <color name="ic_launcher_background">@color/primary_mid</color>
+
+    <color name="surface">#EDE7E3</color>
+    <color name="surface_card">#F7F4F1</color>
+    <color name="on_primary">#FFFFFF</color>
+
+    <color name="text_primary">#1A3338</color>
+    <color name="text_secondary">#5A6F74</color>
+    <color name="text_hint">#8A9A9E</color>
+    <color name="text_strong">#0F2A30</color>
+
+    <color name="border">#D9D2CC</color>
+    <color name="border_strong">#C4BBB3</color>
+
+    <color name="success">#489FB5</color>
+    <color name="success_bg">#D6EEF2</color>
+    <color name="accent">#FFA62B</color>
+    <color name="danger">#DC2626</color>
+    <color name="danger_soft">#EF4444</color>
+    <color name="danger_bg">#FEE2E2</color>
+    <color name="danger_text">#991B1B</color>
+    <color name="warning_bg">#FFE8C2</color>
+    <color name="warning_text">#8A5500</color>
+
+    <color name="overlay_dark">#66000000</color>
+    <color name="overlay_scrim">#59000000</color>
+    <color name="black">#000000</color>
+</resources>

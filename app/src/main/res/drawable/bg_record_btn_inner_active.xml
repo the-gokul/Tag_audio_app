@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Smaller stop square so it sits inside the outer ring like a phone camera stop control -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/danger_soft" />
+    <corners android:radius="4dp" />
+    <size
+        android:width="28dp"
+        android:height="28dp" />
+</shape>
